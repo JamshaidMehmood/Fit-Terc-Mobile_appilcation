@@ -82,5 +82,4 @@ NOTE:
 to use this application work properly the jango server must be on 
 i have a separate repository for that purpose named CRUD server for Fit Terc having link 
 https://github.com/JamshaidMehmood/CRUD_SERVER-for-Fit-Terc
-also one more thing you first have to ipconfig you ip address on cmd and the IPV4 you get by this action should be addef to settings.py in server side and also in eveery where in 
-the activity classes where the retrofit api is called. 
+also one more thing you first have to ipconfig you ip address on cmd and the IPV4 you get by this action should be added to settings.py in server side and also at every where in the activity classes where the retrofit api is called. 
