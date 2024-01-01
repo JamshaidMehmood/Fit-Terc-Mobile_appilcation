@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="tasksVM" type="com.jamshaidsapplication.app.modules.tasks.data.viewmodel.TasksVM" />
+    </data>
+    <LinearLayout
+        android:id="@+id/linear04tasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end"
+        style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111pxv"
+            style="@style/groupStylewhite_A700"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/_58pxh"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_back"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_back" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/editExerciseTitle"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:hint="Exercise Title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editDuration"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:hint="Duration"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editReps"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:hint="Reps"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editDate"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:hint="Date : YYYY-MM-DD"
+            android:inputType="date" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_19pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_19pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_save"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_save" />
+    </LinearLayout>
+</layout>

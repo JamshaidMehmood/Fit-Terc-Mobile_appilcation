@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bodyFontVM" type="com.jamshaidsapplication.app.modules.bodyfont.data.viewmodel.BodyFontVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameBodyFont"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumninter"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_39pxv"
+            android:layout_marginEnd="@dimen/_64pxh"
+            android:layout_marginStart="@dimen/_64pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtInter"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{bodyFontVM.bodyFontModel.txtInter}"
+                style="@style/txtCircularStdmedium24" tools:text="@string/lbl_circular_std"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBodyFont"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="8" tools:listitem="@layout/row_body_font"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

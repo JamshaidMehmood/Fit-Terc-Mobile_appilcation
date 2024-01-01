@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="excersiseRowModel" type="com.jamshaidsapplication.app.modules.home.data.model.ExcersiseRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearCoins"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylewhite_A700_1">
+        <ImageView android:id="@+id/imageVectorOne"
+            android:layout_height="@dimen/_23pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="@dimen/_22pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_vector"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowthirtyfour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtThirtyFour"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.44" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_2pxh"
+                android:singleLine="true"
+                android:text="@{excersiseRowModel.txtThirtyFour}"
+                style="@style/txtBebasNeue20" tools:text="@string/lbl_34"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtMin"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_weight="0.56" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{excersiseRowModel.txtMin}"
+                style="@style/txtCircularStdbook12_1" tools:text="@string/lbl_min"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtSkipping"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{excersiseRowModel.txtSkipping}"
+            style="@style/txtCircularStdbook12_1" tools:text="@string/lbl_skipping"/>
+    </LinearLayout>
+</layout>

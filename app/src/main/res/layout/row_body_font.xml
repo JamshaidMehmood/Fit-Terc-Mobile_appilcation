@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bodyFontRowModel" type="com.jamshaidsapplication.app.modules.bodyfont.data.model.BodyFontRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowh130"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtH130"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{bodyFontRowModel.txtH130}"
+            style="@style/txtCircularStdbook30" tools:text="@string/lbl_h1_30"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtH130One"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_61pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{bodyFontRowModel.txtH130One}"
+            style="@style/txtCircularStdmedium30" tools:text="@string/lbl_h1_30"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtH130Two"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_weight="0.34" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:singleLine="true"
+            android:text="@{bodyFontRowModel.txtH130Two}"
+            style="@style/txtCircularStdbold30_1" tools:text="@string/lbl_h1_30"/>
+    </LinearLayout>
+</layout>

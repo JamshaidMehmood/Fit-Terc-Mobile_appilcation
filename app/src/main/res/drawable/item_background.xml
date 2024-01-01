@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- res/drawable/item_border.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <solid android:color="#07AEFA" /> <!-- Set the background color for each item -->
+        <corners android:radius="8dp" /> <!-- Set corner radius for a rounded appearance -->
+        <stroke
+            android:color="#000000"
+            android:width="5dp" /> <!-- Set the border width -->
+    </shape>
+
+</selector>

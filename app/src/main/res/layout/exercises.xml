@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="frameSixVM" type="com.jamshaidsapplication.app.modules.framesix.data.viewmodel.FrameSixVM"/>
+    </data>
+
+    <!-- Wrap both RecyclerView and RelativeLayout in a parent layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/item_border">
+
+        <!-- Exercise Details Layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_background"
+            >
+
+            <!-- Exercise Title -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                />
+
+            <!-- Duration -->
+            <TextView
+                android:id="@+id/durationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTextView"
+                android:text=""
+                android:textStyle="bold"
+                />
+
+            <!-- Reps -->
+            <TextView
+                android:id="@+id/repsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/durationTextView"
+                android:text=""
+                android:textStyle="bold"
+                />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repsTextView"
+                android:text=""
+                android:textStyle="bold"
+                />
+
+            <!-- Edit and Delete buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:paddingTop="1dp"
+                android:paddingEnd="8dp">
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/delButton"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:text="Del" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>
+

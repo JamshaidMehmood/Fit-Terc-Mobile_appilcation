@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.jamshaidsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.jamshaidsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.tasks.ui.TasksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.profile.ui.ProfileFragmentActivity" android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.eighthundred.ui.EighthundredActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.numbericfont.ui.NumbericFontActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.framesix.ui.FrameSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.bodyfont.ui.BodyFontActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.homecontainer.ui.HomeContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.ExerciseActivity.kt.ExercisesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.jamshaidsapplication.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.colors.ui.ColorsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamshaidsapplication.app.modules.sixhundred.ui.SixhundredActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
